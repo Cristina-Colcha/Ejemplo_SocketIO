@@ -1,59 +1,42 @@
-# Socket.IO Chat en Tiempo Real
-
-Este proyecto es una aplicación de chat en tiempo real basada en **Socket.IO**, utilizando **Flask** para el backend y **HTML/JavaScript** para el frontend. 
+# Socket.IO Real Time Chat
+This project is a real-time chat application based on **Socket.IO**, using **Flask** for the backend and **HTML/JavaScript** for the frontend. 
 ---
+## Features
+- Real-time communication between client and server.
+- Support for multiple connected users.
+- Automatic chat update for all connected clients.
+- Based on modern technologies such as **WebSockets** and **Socket.IO**.
 
-## Características
+## Technologies Used
+- **Python** with **Flask** and **Flask-SocketIO**.
+- **Socket.IO** for real-time bidirectional communication.
+- **HTML** and **JavaScript** for the frontend.
 
-- Comunicación en tiempo real entre cliente y servidor.
-- Soporte para múltiples usuarios conectados.
-- Actualización automática del chat para todos los clientes conectados.
-- Basado en tecnologías modernas como **WebSockets** y **Socket.IO**.
-
-
-## Tecnologías Utilizadas
-
-- **Python** con **Flask** y **Flask-SocketIO**.
-- **Socket.IO** para la comunicación bidireccional en tiempo real.
-- **HTML** y **JavaScript** para el frontend.
-
-
-## 📂 Estructura del Proyecto
-
-    ├── server.py              # Servidor Flask con integración de Socket.IO
-    ├── templates/
-    │   └── index.html         # Interfaz del cliente (frontend)
-    └── README.md              # Documentación del proyecto
-📋 Requisitos
+## 📂 Project Structure.
+    ├── server.py # # Flask server with Socket.IO integration.
+    ├─── templates/
+    │ └└─── index.html # Client interface (frontend).
+    └└─── README.md # Project documentation.
+📋 Requirements.
 Python 3.8+
-Pip para instalar dependencias
-⚙️ Instalación
-Sigue los pasos a continuación para ejecutar este proyecto en tu máquina local:
-
-### Clona este repositorio:
-
+Pip to install dependencies
+⚙️ Installation
+Follow the steps below to run this project on your local machine:
+### Clone this repository:
 https://github.com/Cristina-Colcha/Ejemplo_SocketIO.git 
 cd socketio-chat
-
-### Instala las dependencias:
-
+### Install the dependencies:
 pip install flask flask-socketio
-Ejecuta el servidor:
-
+Run the server:
 python server.py
-Abre tu navegador y accede a:
-
+Open your browser and access to:
 http://localhost:5000
-### Cómo Funciona
-Conexión Cliente-Servidor:
-
-Cuando el cliente accede a la URL del servidor, se establece una conexión WebSocket mediante la biblioteca Socket.IO.
-Intercambio de Mensajes:
-
-El cliente envía mensajes al servidor, y este los retransmite a todos los clientes conectados.
-Actualización en Tiempo Real:
-
-Los mensajes se actualizan dinámicamente en la página sin necesidad de recargarla.
-
-### Autor
-Creado por Tu Cristina Colcha
+### How it works
+Client-Server Connection:
+When the client accesses the server URL, a WebSocket connection is established using the Socket.IO library.
+Message Exchange:
+The client sends messages to the server, and the server relays them to all connected clients.
+Real-Time Update:
+Messages are dynamically updated on the page without the need to reload the page.
+### Author
+Created by Tu Cristina Colcha
