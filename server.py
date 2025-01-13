@@ -9,7 +9,7 @@ socketio = SocketIO(app)
 # Ruta principal para servir el cliente
 @app.route('/')
 def index():
-    return render_template('index.html')  # Asegúrate de tener este archivo en una carpeta 'templates'
+    return render_template('index.html')  
 
 # Evento para manejar mensajes del cliente
 @socketio.on('message')
@@ -19,7 +19,6 @@ def handle_message(data):
 
 # Iniciar el servidor
 if __name__ == '__main__':
-    # Abre automáticamente el navegador en la URL local
     webbrowser.open('http://localhost:5000')
 
     # Inicia el servidor Flask
