@@ -1,0 +1,59 @@
+# Socket.IO Chat en Tiempo Real
+
+Este proyecto es una aplicación de chat en tiempo real basada en **Socket.IO**, utilizando **Flask** para el backend y **HTML/JavaScript** para el frontend. 
+---
+
+## Características
+
+- Comunicación en tiempo real entre cliente y servidor.
+- Soporte para múltiples usuarios conectados.
+- Actualización automática del chat para todos los clientes conectados.
+- Basado en tecnologías modernas como **WebSockets** y **Socket.IO**.
+
+
+## Tecnologías Utilizadas
+
+- **Python** con **Flask** y **Flask-SocketIO**.
+- **Socket.IO** para la comunicación bidireccional en tiempo real.
+- **HTML** y **JavaScript** para el frontend.
+
+
+## 📂 Estructura del Proyecto
+
+    ├── server.py              # Servidor Flask con integración de Socket.IO
+    ├── templates/
+    │   └── index.html         # Interfaz del cliente (frontend)
+    └── README.md              # Documentación del proyecto
+📋 Requisitos
+Python 3.8+
+Pip para instalar dependencias
+⚙️ Instalación
+Sigue los pasos a continuación para ejecutar este proyecto en tu máquina local:
+
+### Clona este repositorio:
+
+https://github.com/Cristina-Colcha/Ejemplo_SocketIO.git 
+cd socketio-chat
+
+### Instala las dependencias:
+
+pip install flask flask-socketio
+Ejecuta el servidor:
+
+python server.py
+Abre tu navegador y accede a:
+
+http://localhost:5000
+### Cómo Funciona
+Conexión Cliente-Servidor:
+
+Cuando el cliente accede a la URL del servidor, se establece una conexión WebSocket mediante la biblioteca Socket.IO.
+Intercambio de Mensajes:
+
+El cliente envía mensajes al servidor, y este los retransmite a todos los clientes conectados.
+Actualización en Tiempo Real:
+
+Los mensajes se actualizan dinámicamente en la página sin necesidad de recargarla.
+
+### Autor
+Creado por Tu Cristina Colcha
